@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show, :create] do
     member do
       get :followings
-      get :follewers
+      get :followers
     end
   end
   
